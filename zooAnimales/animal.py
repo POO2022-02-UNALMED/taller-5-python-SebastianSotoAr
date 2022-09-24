@@ -1,4 +1,5 @@
 from gestion.zona import Zona
+from zooAnimales.mamifero import Mamifero
 
 class Animal:
     totalAnimales = 0
@@ -14,7 +15,7 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
 
-    def __str__(self):
+    def toString(self):
         if (self._zona == None):
             return ("Mi nombre es "+self._nombre+", tengo una edad de "+self._edad+", habito en "+self._habitat+" y mi genero es "+self._genero)
 
@@ -50,3 +51,7 @@ class Animal:
 
     def setZona(self, zona):
         self._zona = zona
+
+    @classmethod
+    def totalPorTipo(cls):
+        return (f"Mamiferos : {Mamifero.cantidadMamiferos()}\nAves : {Ave.cantidadAves()}\nReptiles : {Reptil.cantidadReptiles()}\nPeces : {Pez.cantidadPeces()}\nAnfibios : {Anfibio.cantidadAnfibios()}")
