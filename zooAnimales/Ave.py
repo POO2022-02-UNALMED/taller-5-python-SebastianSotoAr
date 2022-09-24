@@ -6,7 +6,7 @@ class Ave(Animal):
     listado = []
 
     def __init__(self, nombre = "", edad = 0, habitat = 0, genero = "", colorPlumas = ""):
-        super.__init__(nombre, edad, habitat, genero)
+        super().__init__(nombre, edad, habitat, genero)
         self._colorPlumas = colorPlumas
         Ave.listado.append(self)
 

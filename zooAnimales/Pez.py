@@ -6,7 +6,7 @@ class Pez(Animal):
     listado = []
 
     def __init__(self, nombre = "", edad = 0, habitat = 0, genero = "", colorEscamas = "", cantidadAletas = 0):
-        super.__init__(nombre, edad, habitat, genero)
+        super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
         Pez.listado.append(self)

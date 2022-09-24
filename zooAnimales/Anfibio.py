@@ -6,7 +6,7 @@ class Anfibio(Animal):
     listado = []
 
     def __init__(self, nombre = "", edad = 0, habitat = 0, genero = "", colorPiel = "", venenoso = False):
-        super.__init__(nombre, edad, habitat, genero)
+        super().__init__(nombre, edad, habitat, genero)
         self._colorPiel = colorPiel
         self._venenoso = venenoso
         Anfibio.listado.append(self)
