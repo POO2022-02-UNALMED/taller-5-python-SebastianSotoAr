@@ -1,3 +1,5 @@
+from gestion import Zona
+
 class Animal:
     totalAnimales = 0
 

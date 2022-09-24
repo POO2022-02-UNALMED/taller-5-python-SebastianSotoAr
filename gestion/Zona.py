@@ -1,3 +1,5 @@
+from gestion import Zoologico
+
 class Zona:
     def __init__(self, nombre = "", zoologico = None):
         self._nombre = nombre

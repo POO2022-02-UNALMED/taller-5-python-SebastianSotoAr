@@ -1,3 +1,5 @@
+from gestion import Zona
+
 class Zoologico:
 
     def __init_ (self, nombre = "", ubicacion = ""):
