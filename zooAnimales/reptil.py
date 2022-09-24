@@ -11,8 +11,9 @@ class Reptil(Animal):
         self._largoCola = largoCola
         Reptil.listado.append(self)
 
-    def cantidadReptiles(self):
-        return len(Reptil.listado)
+    @classmethod
+    def cantidadReptiles(cls):
+        return len(cls.listado)
 
     def movimiento(self):
         return "reptar"

@@ -11,8 +11,9 @@ class Pez(Animal):
         self._cantidadAletas = cantidadAletas
         Pez.listado.append(self)
 
-    def cantidadPez(self):
-        return len(Pez.listado)
+    @classmethod
+    def cantidadPez(cls):
+        return len(cls.listado)
 
     def movimiento(self):
         return "nadar"
